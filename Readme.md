@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [сергей бутенко](https://up.htmlacademy.ru/adaptive/16/user/50837).
-* Наставник: `Неизвестно`.
+* Наставник: `улетел но обещал вернуться`.
 
 ---
 
