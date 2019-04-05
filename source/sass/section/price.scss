@@ -1,0 +1,163 @@
+.price {
+  padding-top: 28.5%;
+  background-color: $lightblue;
+  background-image: url("../img/icons/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.price__table {
+  display: table;
+  margin-bottom: 12.5%;
+}
+
+.price__sked {
+  @include list();
+  display: table-row;
+}
+
+.price__roster {
+  position: relative;
+  display: table-cell;
+  padding-top: 1.8%;
+  padding-bottom: 1.8%;
+  padding-left: 3%;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  background-color: $white;
+  border: 1px solid #e5e5e5;
+
+  &--stealth,
+  &--none {
+    display: none;
+  }
+
+  &--thead {
+    padding-left: 0;
+    padding-top: 2%;
+    padding-bottom: 2.2%;
+    font-size: 18px;
+    text-align: center;
+    color: $white;
+    font-weight: 700;
+    background-color: #283645;
+  }
+
+  &::after {
+    position: absolute;
+    top: 24%;
+    left: 82%;
+    display: block;
+    content: "";
+    width: 33px;
+    height: 27px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  &--check::after {
+    background-image: url("../img/icons/icon-yes.svg");
+  }
+
+  &--cross::after {
+    background-image: url("../img/icons/icon-no.svg");
+  }
+
+  &--hit {
+    position: relative;
+    background-image: url("../img/icons/bg-hit.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    &::before {
+      position: absolute;
+      left: 12px;
+      top: 10px;
+      content: "хит";
+      display: block;
+      font-size: 12px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.price__item-allotted {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.price__toglles {
+  width: 23%;
+  margin: 0 auto;
+  margin-bottom: 14.5%;
+}
+
+@media #{$tablet} {
+  .price {
+    padding-top: 14.8%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+  }
+
+  .price__table {
+    position: unset;
+    width: 100%;
+  }
+
+  .price__roster {
+    padding-top: 1.2%;
+    padding-bottom: 1.2%;
+    padding-left: 2.4%;
+    font-size: 12px;
+
+    &--thead {
+      padding-top: 1.5%;
+      padding-bottom: 1.5%;
+      padding-left: 0;
+      font-size: 16px;
+    }
+
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--none {
+      display: table-cell;
+    }
+
+    &--stealth {
+      display: table-cell;
+      opacity: 0;
+    }
+
+    &--hit {
+      background-size: 55px auto;
+
+      &::before {
+        left: 6px;
+        top: 4px;
+      }
+    }
+  }
+
+  .price__item-allotted {
+    font-size: 18px;
+  }
+
+  .price__roster-text {
+    opacity: 0;
+  }
+}
+
+@media #{$desktop} {
+  .price {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}

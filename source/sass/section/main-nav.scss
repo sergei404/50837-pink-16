@@ -1,0 +1,18 @@
+.main-nav {
+  width: 100%;
+}
+
+.main-nav__list {
+  width: 100%;
+}
+
+@media #{$desktop} {
+  .main-nav {
+    display: block;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

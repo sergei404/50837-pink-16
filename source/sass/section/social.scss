@@ -1,0 +1,36 @@
+.social {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__link {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #e9ebec;
+  border-radius: 50%;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #e9ebec;
+
+    svg {
+      display: block;
+      fill: #f1becc;
+    }
+  }
+}
+
+@media #{$tablet} {
+  .social {
+    width: 29%;
+    justify-content: space-around;
+  }
+}

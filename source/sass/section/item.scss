@@ -1,0 +1,100 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-bottom: 7.8%;
+}
+
+.item__photo {
+  @include link();
+
+  display: block;
+}
+
+.item__image {
+  width: 100%;
+}
+
+.item__comment {
+  display: flex;
+  flex-direction: column;
+  margin-top: -2px;
+  background-color: $lightblue;
+  padding-left: 6.5%;
+  padding-top: 6%;
+  padding-bottom: 7.5%;
+}
+
+.item__author {
+  display: block;
+
+  @include zeroing();
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.item__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.item__commentary {
+  display: block;
+
+  @include zeroing();
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 5.5%;
+}
+
+
+.item__like {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+
+  @include zeroing();
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/icons/icon-heart.svg");
+  }
+}
+
+@media #{$tablet} {
+  .item {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 3.1%;
+  }
+
+  .item__comment {
+    padding-left: 9%;
+    padding-right: 4%;
+    padding-top: 7.5%;
+    padding-bottom: 8.5%;
+  }
+
+  .item__commentary {
+    margin-bottom: 7%;
+  }
+
+  .item__like {
+    width: 92.2%;
+    flex-direction: row-reverse;
+
+    &--indent {
+      margin-top: 9%;
+    }
+  }
+}
