@@ -1,0 +1,29 @@
+.list {
+  @include list();
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+}
+
+.list__item {
+  width: 100%;
+}
+
+@media #{$tablet} {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .list__item {
+    width: 48.5%;
+  }
+}
+
+@media #{$desktop} {
+  .list__item {
+    width: 33%;
+  }
+}

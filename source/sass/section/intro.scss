@@ -1,0 +1,212 @@
+.intro {
+  width: 100%;
+  padding-top: 50%;
+  background-image: url("../img/fond/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 4px;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/fond/bg-back-mobile@2x.jpg");
+    background-position: 50% -4px;
+    background-size: 755px auto;
+  }
+}
+
+.intro__annex {
+  position: relative;
+  width: 100%;
+  padding-top: 305px;
+  background-image: url("../img/fond/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 19px;
+  background-size: 260px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/fond/iphone-hand-mobile@2x.png");
+  }
+}
+
+.intro__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+  background-color: #1d2631;
+}
+
+.intro__title {
+  display: none;
+}
+
+.intro__reference {
+  @include link();
+  display: block;
+  width: 87%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  margin-bottom: 10%;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: $white;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 35px;
+
+  &:hover {
+    color: $braun;
+    background-color: $white;
+  }
+
+  &:active {
+    color: #f2ced5;
+  }
+}
+
+.intro__list {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include list();
+  margin-bottom: 2%;
+}
+
+.intro__link {
+  display: block;
+  width: 50px;
+  height: 60px;
+  background-repeat: no-repeat;
+
+  &--one {
+    background-image: url("../img/icons/logo-apple.svg");
+    background-position: 95% 75%;
+  }
+
+  &--two {
+    background-image: url("../img/icons/logo-android.svg");
+    background-position: center 75%;
+  }
+
+  &--three {
+    background-image: url("../img/icons/logo-microsoft.svg");
+    background-position: 15% 85%;
+  }
+}
+
+.intro__text {
+  display: block;
+  width: 80%;
+  text-align: center;
+  color: $white;
+  line-height: 24px;
+  margin-bottom: 11%;
+}
+
+@media #{$tablet} {
+  .intro {
+    width: 100%;
+    padding-top: 33%;
+    background-image: url("../img/fond/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 19px;
+    background-size: 1278px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/fond/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .intro__annex {
+    width: 100%;
+    padding-top: 0;
+    background-image: url("../img/fond/iphone-hand-tablet@1x.png");
+    background-position: 55% 0;
+    background-size: 700px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/fond/iphone-hand-tablet@2x.png");
+    }
+  }
+
+  .intro__wrap {
+    width: 50%;
+    padding-top: 3%;
+    margin-left: 1%;
+    //padding-bottom: 11%;
+    background-color: transparent;
+  }
+
+  .intro__title {
+    width: 60%;
+    display: block;
+
+    @include zeroing();
+    margin-bottom: 8.5%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 300;
+    color: $white;
+  }
+
+  .intro__reference {
+    width: 90%;
+    margin-bottom: 14%;
+  }
+
+  .intro__list {
+    width: 65%;
+    margin-bottom: 5%;
+  }
+
+  .intro__text {
+    width: 95%;
+    font-size: 18px;
+    margin-bottom: 11.5%;
+  }
+}
+
+@media #{$desktop} {
+  .intro {
+    padding-top: 25%;
+    background-image: url("../img/fond/bg-back-desktop@1x.jpg");
+    background-position: 50% 90px;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/fond/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  .intro__annex {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url("../img/fond/iphone-hand-desktop@1x.png");
+    background-position: 85% bottom;
+    background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/fond/iphone-hand-desktop@2x.png");
+    }
+  }
+
+  .intro__wrap {
+    width: 37%;
+    padding-top: 3%;
+    padding-bottom: 10%;
+  }
+
+  .intro__title {
+    width: 65%;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 20%;
+  }
+
+  .intro__list {
+    margin-top: 40px;
+  }
+}

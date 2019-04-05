@@ -1,0 +1,33 @@
+@mixin open_sans($style: light) {
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  @if $style == light {
+    font-weight: 300;
+  }
+
+  @if $style == regular {
+    font-weight: 400;
+  }
+
+  @if $style == bold {
+    font-weight: 700;
+  }
+}
+
+
+@mixin list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin link() {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+@mixin zeroing() {
+  margin: 0;
+  padding: 0;
+}
