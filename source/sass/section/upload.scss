@@ -71,6 +71,7 @@
   opacity: 0.5;
   background-repeat: no-repeat;
   background-position: center center;
+
   @include zeroing();
 
   &:hover {
@@ -189,6 +190,7 @@
   .upload__block-text {
     margin-bottom: 10.2%;
   }
+
   .upload__text {
     font-size: 18px;
   }
@@ -197,7 +199,6 @@
     display: flex;
     justify-content: space-between;
     padding-top: 8.8%;
-
   }
 
   .upload__photo {
@@ -249,6 +250,7 @@
   .upload__range-controls {
     position: relative;
     width: 100%;
+
     .upload__range-feke {
       &::before {
         right: 20.5%;

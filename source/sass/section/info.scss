@@ -152,8 +152,6 @@
     line-height: 150px;
     color: #d22856;
 
-
-
     &::before {
       position: absolute;
       content: "";
@@ -166,7 +164,7 @@
       background-image: url("../img/icons/icon-timer.svg");
       background-repeat: no-repeat;
       background-position: 19px 0;
-      background-size: contain;;
+      background-size: contain;
     }
 
     &::after {
