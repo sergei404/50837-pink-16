@@ -4,7 +4,7 @@
   background-image: url("../img/fond/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 4px;
-  background-size: contain;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/fond/bg-back-mobile@2x.jpg");
@@ -19,7 +19,7 @@
   padding-top: 305px;
   background-image: url("../img/content/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 19px;
+  background-position: left 20px;
   background-size: 260px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -111,7 +111,7 @@
     padding-top: 33%;
     background-image: url("../img/fond/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 19px;
+    background-position: 50% 40px;
     background-size: 1278px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -123,8 +123,8 @@
     width: 100%;
     padding-top: 0;
     background-image: url("../img/content/iphone-hand-tablet@1x.png");
-    background-position: 55% 0;
-    background-size: 700px auto;
+    background-position: right 0;
+    background-size: contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/fond/iphone-hand-tablet@2x.png");
