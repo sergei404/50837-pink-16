@@ -7,6 +7,7 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var svgstore = require("gulp-svgstore");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -19,6 +20,17 @@ gulp.task("css", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
+});
+
+gulp.task("sprite", function () {
+  return gulp.src([
+    "source/img/icons/*.svg"
+  ])
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("server", function () {
