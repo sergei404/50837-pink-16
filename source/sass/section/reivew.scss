@@ -1,6 +1,10 @@
 .reivew {
-  padding-top: 13%;
+  padding-top: 13.4%;
   background-color: #ffffff;
+}
+
+.reivew__list {
+  @include list();
 }
 
 .reivew__item {
@@ -18,11 +22,12 @@
 }
 
 .reivew__text {
-  padding-left: 7.5%;
-  padding-right: 7.5%;
+  padding-left: 6.4%;
+  padding-right: 7%;
+  margin-bottom: 11%;
   font-size: 14px;
   line-height: 30px;
-  margin-bottom: 11%;
+  letter-spacing: 0.15px;
 }
 
 .reivew__toggles {

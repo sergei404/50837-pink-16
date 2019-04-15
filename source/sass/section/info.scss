@@ -12,11 +12,9 @@
 
 .info__tagline {
   display: block;
-
-  @include zeroing();
   width: 70%;
   margin: 0 auto;
-  margin-bottom: 8%;
+  margin-bottom: 8.2%;
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
@@ -28,7 +26,7 @@
   padding-top: 24.5%;
   padding-left: 8.4%;
   padding-right: 8.4%;
-  background-image: url("../img/icons/bg-triangle-white.svg");
+  background-image: url("../img/icon/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain;
@@ -66,6 +64,7 @@
 .info__text {
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: 0.4px;
 }
 
 .info__action {
