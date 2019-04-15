@@ -1,41 +1,35 @@
 .page-header {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: -22%;
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.page-header--show {
-  background-color: #283645;
-
-  .page-header__nav {
-    display: block;
-  }
 }
 
 .page-header__wrap {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding-top: 6%;
-  padding-left: 6.5%;
-  padding-right: 4%;
-  padding-bottom: 2.5%;
+  padding-top: 6.2%;
+  text-align: start;
+}
+
+.page-header__wrap--show {
+  background-color: #283645;
+}
+
+.page-header__wrap--show + .page-header__nav {
+  display: block;
 }
 
 .page-header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 147px;
+  margin-right: auto;
+  margin-left: 6.15%;
+  margin-bottom: 2.5%;
 }
 
 .page-header__logo svg {
   display: block;
   width: 147px;
   height: auto;
-  margin: 0 auto;
 
   &:hover {
     path {
@@ -44,7 +38,7 @@
   }
 
   &:active {
-    opacity: 0.3;
+    opacity: 0.7;
   }
 }
 
@@ -59,6 +53,7 @@
 .page-header__submit {
   width: 40px;
   height: 25px;
+  margin-right: 3%;
   border: 0;
   outline: 0;
   background-color: transparent;
@@ -131,9 +126,6 @@
 @media #{$tablet} {
   .page-header__wrap {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 4.2%;
     padding-left: 3%;
     padding-right: 1.8%;
@@ -155,9 +147,8 @@
 
 @media #{$desktop} {
   .page-header {
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
     padding-left: 8.5%;
     padding-right: 9%;
     padding-top: 0;
@@ -166,11 +157,6 @@
 
   .page-header__wrap {
     width: 40%;
-    padding-top: 2%;
-  }
-
-  .page-header__logo {
-    margin-top: 1%;
   }
 
   .page-header__logo-tablet {

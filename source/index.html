@@ -11,8 +11,8 @@
 
 <body>
   <div class="container">
-    <header class="page-header page-header--show">
-      <div class="page-header__wrap">
+    <header class="page-header">
+      <div class="page-header__wrap page-header__wrap--show">
         <a href="#" class="page-header__logo">
           <svg width="146.3px" height="40.375" viewBox="0 0 146.3 40.375">
             <g class="page-header__logo-mobale">
@@ -61,25 +61,20 @@
             </g>
           </svg>
         </a>
-        <!-- <button class="page-header__submit" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <span class="page-header__toggle"></span>
-        </button> -->
       </div>
       <nav class="main-nav page-header__nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active">главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">фотографии</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">фотографии</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">конкурс</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">конкурс</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive"><span
-                class="site-list__frog">htmla</span>cademy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
           </li>
         </ul>
       </nav>
@@ -90,7 +85,7 @@
         <div class="intro__annex">
           <div class="intro__wrap">
             <h3 class="intro__title">Взгляните на жизнь иначе!</h3>
-            <a href="https://www.apple.com/ru/itunes/download/" class="intro__reference">Скачать придожение</a>
+            <a href="https://www.apple.com/ru/itunes/download/" class="intro__reference">Скачать приложение</a>
             <ul class="intro__list">
               <li class="intro__item"><a href="https://www.apple.com/ru/itunes/download/"
                   class="intro__link intro__link--one"></a></li>
@@ -101,7 +96,6 @@
             </ul>
             <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-          <img src="img/content/iphone-hand-desktop@1x.png" alt="hand">
         </div>
       </section>
       <section class="info">
@@ -114,7 +108,7 @@
           <ul class="info__list">
             <li class="info__item info__item--one">
               <b class="info__title">Поднимает настроение</b>
-              <p class="info__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+              <p class="info__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально&nbsp; в несколько
                 кликов!</p>
             </li>
             <li class="info__item info__item--two">
@@ -248,7 +242,7 @@
     </main>
     <footer class="page-footer page-footer--сopperfield">
       <a href="#" class="page-footer__link">
-        <!-- <svg  width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
+        <svg  width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
           <g class="page-footer__blue-mobile">
             <g>
               <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
@@ -287,7 +281,7 @@
               </g>
             </g>
           </g>
-        </svg> -->
+        </svg>
       </a>
       <ul class="page-footer__list social">
         <li class="page-footer__item social__item">
@@ -326,6 +320,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
