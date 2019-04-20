@@ -15,10 +15,10 @@
 
 .content__title {
   display: block;
-  width: 55%;
+  //width: 270px;
 
   @include zeroing();
-  margin: 0 auto;
+  //margin: 0 auto;
   margin-bottom: 26.5%;
   text-align: center;
   font-size: 24px;
@@ -49,16 +49,7 @@
   width: 100%;
   min-height: 140px;
 
-  @include zeroing();
-  padding-top: 42%;
-  background-image: url("../img/fond/panorama-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/fond/panorama-mobile@2x.jpg");
-  }
+  //@include zeroing();
 }
 
 
@@ -73,6 +64,13 @@
   text-transform: uppercase;
   color: $white;
   background-color: #d22856;
+}
+
+
+
+.content__image {
+  width: 100%;
+  display: block;
 }
 
 .content__comment {
@@ -137,7 +135,7 @@
     padding-top: 33%;
     background-image: url("../img/fond/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 34px;
+    background-position: 50% 21px;
     background-size: 1200px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -156,19 +154,6 @@
     width: 75%;
     margin-bottom: 11.3%;
     font-size: 18px;
-  }
-
-  .content__photo {
-    min-height: 510px;
-    padding-top: 46%;
-    background-image: url("../img/fond/panorama-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/fond/panorama-tablet@2x.jpg");
-    }
   }
 
   .content__allotted {
@@ -203,10 +188,10 @@
 
 @media #{$desktop} {
   .content {
-    padding-top: 26.5%;
+    //padding-top: 18%;
     background-image: url("../img/fond/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 6.5%;
+    background-position: 50% 5%;
     background-size: 2550px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -217,7 +202,7 @@
   }
 
   .content__title {
-    width: 40%;
+   // width: 40%;
     margin-bottom: 8.8%;
   }
 
@@ -230,17 +215,5 @@
     padding-top: 0;
     margin-bottom: 11.3%;
     font-size: 18px;
-  }
-
-  .content__photo {
-    padding-top: 46%;
-    background-image: url("../img/fond/panorama-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 51% center;
-    background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/fond/panorama-desktop@2x.jpg");
-    }
   }
 }

@@ -14,7 +14,7 @@
   display: block;
   width: 70%;
   margin: 0 auto;
-  margin-bottom: 8.2%;
+  margin-bottom: 8.4%;
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
@@ -22,22 +22,35 @@
 }
 
 .info__wrap {
+  position: relative;
   background-color: $lightblue;
   padding-top: 24.5%;
   padding-left: 8.4%;
   padding-right: 8.4%;
-  background-image: url("../img/icon/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    min-height: 94px;
+    background-image: url("../img/icons/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+  }
 
   &::after {
+    position: relative;
     content: "";
     display: block;
     min-height: 285px;
     background-image: url("../img/fond/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center 8px;
+    z-index: 1;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/fond/iphone-screen-mobile@2x.png");
@@ -132,7 +145,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 9%;
   }
 
@@ -143,8 +156,6 @@
     min-width: 300px;
     justify-content: center;
     align-items: center;
-
-    @include zeroing();
     padding-top: 3%;
     font-size: 96px;
     font-weight: 700;
@@ -154,9 +165,8 @@
     &::before {
       position: absolute;
       content: "";
-      top: 50%;
-      transform: translateY(-50%);
-      left: 1px;
+      top: -50px;
+      left: 30px;
       display: block;
       width: 100%;
       min-height: 275px;
@@ -168,13 +178,12 @@
 
     &::after {
       position: absolute;
-      top: 54%;
-      transform: translateY(-46%);
-      left: 14px;
+      top: 15px;
+      left: 54px;
       content: "";
       display: block;
       width: 100%;
-      min-height: 200px;
+      min-height: 180px;
       background-image: url("../img/icons/icon-editor-diagram-fill.svg");
       background-repeat: no-repeat;
       background-position: 25px 0;
@@ -225,16 +234,16 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    padding-top: 0;
   }
 
   .info__item {
     width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    display: block;
     text-align: center;
 
     &::before {
+      position: relative;
       content: "";
       display: block;
       min-width: 180px;
@@ -243,6 +252,7 @@
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
+      z-index: 1;
     }
 
     &--one::before {

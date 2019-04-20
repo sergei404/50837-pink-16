@@ -1,11 +1,11 @@
 .contacts {
-  padding-top: 14.5%;
+  padding-top: 12.5%;
   color: #d22856;
   background-color: #ffffff;
 }
 
 .contacts__subhead {
-  margin-bottom: 7.5%;
+  margin-bottom: 5.3%;
   text-align: center;
 }
 
@@ -16,29 +16,30 @@
 }
 
 .contacts__contacts {
+  @include list;
   padding-top: 4%;
 }
 
 .contacts__adds {
-  width: 74%;
+  width: 79%;
   display: flex;
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 7%;
+  margin-bottom: 4%;
 }
 
 .contacts__allotted {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 1%;
+  @include zeroing();
 }
 
 .contacts__link,
 .contacts__email {
   @include link();
 
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   font-size: 24px;
   font-weight: 300;
   color: #d22856;
@@ -49,15 +50,22 @@
   }
 }
 
+.contacts__email {
+  margin-bottom: 8.5px;
+}
+
 .contacts__text {
   font-size: 24px;
-  margin-bottom: 5%;
+}
+
+.contacts__text-carry {
+  display: block;
 }
 
 .contacts__map {
   position: relative;
   width: 100%;
-  min-height: 210px;
+  min-height: 220px;
   background: url("../img/fond/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center 100%;
@@ -67,24 +75,38 @@
     background-image: url("../img/fond/bg-map-mobile@2x.png");
     background-size: contain;
   }
-}
 
-.contacts__triangle {
-  @include zeroing();
-  position: absolute;
-  top: 0;
-  display: block;
-  content: "";
-  width: 100%;
-  height: auto;
-  min-height: 30%;
-  background: url("../img/icons/bg-triangle-white-footer.svg");
-  background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: cover;
-  z-index: 10;
-}
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: auto;
+    min-height: 30%;
+    background: url("../img/icons/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    z-index: 10;
+  }
 
+  &::after {
+    position: absolute;
+    left: 44.5%;
+    transform: translateX(-55.5%);
+    top: 59%;
+    transform: translateY(-41%);
+    display: block;
+    content: "";
+    width: 36px;
+    height: 36px;
+    background: url("../img/icons/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 10;
+  }
+}
 
 .contacts__map iframe {
   width: 100%;
