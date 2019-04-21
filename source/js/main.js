@@ -1,5 +1,4 @@
 var fgh = document.querySelector(".page-header__wrap");
-var h = window.innerWidth;
 
 var btn = document.createElement('button');
 btn.classList.add('page-header__submit');

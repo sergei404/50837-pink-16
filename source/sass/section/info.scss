@@ -86,20 +86,17 @@
 
 @media #{$tablet} {
   .info__subhead {
-    padding-top: 9%;
-    margin-bottom: 5%;
+    padding-top: 7.7%;
+    margin-bottom: 50px;
   }
 
   .info__tagline {
     font-size: 40px;
-    margin-bottom: 2%;
+    margin-bottom: 4px;
+    line-height: 45px;
 
     &:first-child {
       width: 90%;
-    }
-
-    &:last-child {
-      line-height: 45px;
     }
   }
 
@@ -116,7 +113,7 @@
       min-width: 270px;
       min-height: 500px;
       background-image: url("../img/fond/iphone-screen-3-tablet@1x.png");
-      background-position: left 20px;
+      background-position: left 0;
       background-size: contain;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -127,13 +124,13 @@
   }
 
   .info__list {
-    width: 47.5%;
-    padding-top: 9%;
+    width: 47%;
+    padding-top: 5.1%;
   }
 
   .info__item {
     text-align: left;
-    margin-bottom: 10.5%;
+    margin-bottom: 10.6%;
 
     &:last-child {
       margin-bottom: 0;
@@ -145,8 +142,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-top: 9%;
+    justify-content: space-between;
+    padding-top: 6%;
   }
 
   .info__action-time {
