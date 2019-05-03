@@ -115,7 +115,7 @@
   height: 7px;
   background-color: #bec2c7;
   border-radius: 50%;
-  border: 2px solid $lightblue;;
+  border: 2px solid $lightblue;
   box-sizing: content-box;
 
   &:hover {
@@ -128,7 +128,7 @@
 }
 
 .price__radio:checked {
-  & +.price__radio-fake {
+  & + .price__radio-fake {
     width: 5px;
     height: 5px;
     background-color: transparent;

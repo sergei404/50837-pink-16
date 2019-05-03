@@ -73,7 +73,7 @@
 }
 
 .reivew-slider__input:checked {
-  & +.reivew-slider__fake {
+  & + .reivew-slider__fake {
     width: 5px;
     height: 5px;
     background-color: transparent;
