@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding-top: 13%;
   background-color: #ffffff;
 
   &--сopperfield {
@@ -12,11 +11,8 @@
 }
 
 .page-footer__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 147px;
-  margin-bottom: 12%;
+  display: block;
+  text-align: center;
 }
 
 .page-footer__link svg {
@@ -41,15 +37,15 @@
 
 .page-footer__list {
   @include list();
-  margin-bottom: 11%;
+  //margin-bottom: 11%;
 }
 
 .page-footer__copyright {
   width: 45%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 8%;
+  //justify-content: space-around;
+  align-items: flex-end;
+  //margin-bottom: 8%;
 }
 
 .page-footer__link-html {
@@ -72,12 +68,12 @@
   .page-footer {
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-top: 4.5%;
-    padding-bottom: 4.5%;
-    padding-left: 0;
-    padding-right: 0;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 36px;
+    padding-left: 7px;
+    padding-right: 7px;
 
     &--сopperfield {
       display: flex;
@@ -86,7 +82,7 @@
 
   .page-footer__link {
     width: 30%;
-    margin-bottom: 0;
+    margin-top: -12px;
   }
 
   .page-footer__list {
@@ -96,12 +92,14 @@
   .page-footer__copyright {
     width: 30%;
     justify-content: flex-end;
-    margin-bottom: 0;
-    padding-right: 3.5%;
+  }
+
+  .page-footer__text {
+    letter-spacing: 0.35px;
   }
 
   .page-footer__link-html {
-    margin-left: 9%;
+    margin-left: 15px;
   }
 }
 

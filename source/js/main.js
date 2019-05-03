@@ -48,25 +48,44 @@ myCollection.getMap().events.add('click', function() {
 startMap();*/
 
 
-var myMap;
+// var myMap;
 
-ymaps.ready(init);
+// ymaps.ready(init);
 
-function init () {
-  myMap = new ymaps.Map("map", {
-    center: [59.938649906262164,30.323049135581975],
-    zoom: 17,
-    controls: [],
-    behaviors: ["drag"]
-  }),
+// function init () {
+//   myMap = new ymaps.Map("map", {
+//     center: [59.938649906262164,30.323049135581975],
+//     zoom: 17,
+//     controls: [],
+//     behaviors: ["drag"]
+//   }),
 
-  myMap.controls.add(
-    new ymaps.control.ZoomControl()
-  );
+//   myMap.controls.add(
+//     new ymaps.control.ZoomControl()
+//   );
 
-  var myPlacemark = new  ymaps.Placemark(
-    [59.938649906262164,30.323049135581975]);
+//   var myPlacemark = new  ymaps.Placemark(
+//     [59.938649906262164,30.323049135581975]);
 
-  myMap.geoObjects.add(myPlacemark),
-  myMap.controls.add("ZoomControl");
-}
+//   myMap.geoObjects.add(myPlacemark),
+//   myMap.controls.add("ZoomControl");
+// }
+
+
+//слайдер
+
+// var tog = document.querySelectorAll('.slider__toggle');
+// var boxTog = document.querySelector('.slider__toggles');
+
+// boxTog.onclick = function(event) {
+//   if(event.target) {
+
+//   }
+//   for(var i = 0 ; i < tog.length; i++) {
+//     if(tog[i].classList.contains('slider__toggle--active')) {
+//       tog[i].classList.remove('slider__toggle--active');
+//     } else {
+
+//     }
+//   }
+// }

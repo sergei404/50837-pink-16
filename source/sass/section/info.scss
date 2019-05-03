@@ -5,8 +5,8 @@
 .info__subhead {
   display: block;
   width: 100%;
-  padding-top: 12%;
-  margin-bottom: 11%;
+  padding-top: 40px;
+  margin-bottom: 36px;
   text-align: center;
 }
 
@@ -24,7 +24,7 @@
 .info__wrap {
   position: relative;
   background-color: $lightblue;
-  padding-top: 24.5%;
+  padding-top: 24%;
   padding-left: 8.4%;
   padding-right: 8.4%;
 
@@ -35,11 +35,11 @@
     display: block;
     content: "";
     width: 100%;
-    min-height: 94px;
+    height: 94px;
     background-image: url("../img/icons/bg-triangle-white.svg");
     background-repeat: no-repeat;
-    background-position: top right;
-    background-size: contain;
+    background-position: 100% 50%;
+    background-size: cover;
   }
 
   &::after {
@@ -64,20 +64,26 @@
 }
 
 .info__item {
+  display: block;
   text-align: center;
-  margin-bottom: 11%;
+  margin-bottom: 31.5px;
 }
 
 .info__title {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+
+  @include zeroing;
+  margin-bottom: 11.3px;
 }
 
 .info__text {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.4px;
+
+  @include zeroing;
 }
 
 .info__action {
@@ -86,7 +92,7 @@
 
 @media #{$tablet} {
   .info__subhead {
-    padding-top: 7.7%;
+    padding-top: 7.8%;
     margin-bottom: 50px;
   }
 
@@ -105,16 +111,14 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
+
+    @include zeroing;
 
     &::after {
-      min-width: 270px;
-      min-height: 500px;
+      min-width: 265px;
+      min-height: 485px;
       background-image: url("../img/fond/iphone-screen-3-tablet@1x.png");
-      background-position: left 0;
-      background-size: contain;
+      background-position: left 5px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/fond/iphone-screen-3-tablet@2x.png");
@@ -125,91 +129,79 @@
 
   .info__list {
     width: 47%;
-    padding-top: 5.1%;
+    padding-top: 33px;
   }
 
   .info__item {
     text-align: left;
-    margin-bottom: 10.6%;
+    margin-bottom: 36px;
+
 
     &:last-child {
       margin-bottom: 0;
     }
   }
 
-
-  .info__action {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 6%;
+  .info__title {
+    margin-bottom: 11px;
   }
 
-  .info__action-time {
+
+  .info__action {
     position: relative;
+    width: 100%;
     display: flex;
-    width: 50%;
-    min-width: 300px;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3%;
-    font-size: 96px;
-    font-weight: 700;
-    line-height: 150px;
-    color: #d22856;
+    justify-content: space-around;
+    padding-top: 58px;
 
     &::before {
-      position: absolute;
-      content: "";
-      top: -50px;
-      left: 30px;
+      content: "24";
+      padding-top: 86px;
       display: block;
-      width: 100%;
-      min-height: 275px;
-      background-image: url("../img/icons/icon-timer.svg");
-      background-repeat: no-repeat;
-      background-position: 19px 0;
-      background-size: contain;
-    }
-
-    &::after {
-      position: absolute;
-      top: 15px;
-      left: 54px;
-      content: "";
-      display: block;
-      width: 100%;
-      min-height: 180px;
-      background-image: url("../img/icons/icon-editor-diagram-fill.svg");
-      background-repeat: no-repeat;
-      background-position: 25px 0;
-      background-size: contain;
+      width: 238px;
+      min-height: 278px;
+      text-align: center;
+      font-size: 96px;
+      font-weight: 700;
+      color: $color;
+      background-image: url("../img/icons/icon-editor-diagram-fill.svg"), url("../img/icons/icon-timer.svg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: 17px 55px, 0 0;
+      background-size: 203px auto, contain;
     }
   }
 
   .info__action-wrap {
     width: 50%;
-    padding-top: 1%;
+    padding-top: 37px;
+    padding-left: 22px;
   }
 
   .info__title-action {
     width: 70%;
+
+    @include zeroing;
+    margin-bottom: 12px;
     font-size: 30px;
-    margin-bottom: 3px;
+    line-height: 36px;
   }
 
   .info__text-action {
-    width: 90%;
+    width: 98%;
+
+    @include zeroing;
+    margin-bottom: 11px;
     line-height: 24px;
     font-weight: 400;
-    color: #283645;
+    letter-spacing: 0.43px;
+    color: $color;
   }
 
   .info__link {
     line-height: 24px;
     font-weight: 400;
-    color: #d22856;
+    letter-spacing: 0.43px;
+    color: $color;
   }
 }
 
