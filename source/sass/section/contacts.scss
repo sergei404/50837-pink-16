@@ -1,11 +1,11 @@
 .contacts {
-  padding-top: 12.5%;
+  padding-top: 42px;
   color: #d22856;
   background-color: #ffffff;
 }
 
 .contacts__subhead {
-  margin-bottom: 5.3%;
+  margin-bottom: 17px;
   text-align: center;
 }
 
@@ -13,11 +13,12 @@
 .contacts__text {
   @include zeroing();
   font-size: 24px;
+  line-height: 31px;
 }
 
 .contacts__contacts {
   @include list;
-  padding-top: 4%;
+  padding-top: 15px;
 }
 
 .contacts__adds {
@@ -26,7 +27,11 @@
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 4%;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__allotted {
@@ -40,7 +45,6 @@
 .contacts__email {
   @include link();
 
-  margin-bottom: 5px;
   font-size: 24px;
   font-weight: 300;
   color: #d22856;
@@ -55,10 +59,6 @@
   margin-bottom: 8.5px;
 }
 
-.contacts__text {
-  font-size: 24px;
-}
-
 .contacts__text-carry {
   display: block;
 }
@@ -66,10 +66,10 @@
 .contacts__map {
   position: relative;
   width: 100%;
-  min-height: 220px;
+  min-height: 235px;
   background: url("../img/fond/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center 100%;
+  background-position: 0 99.5%;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -82,8 +82,7 @@
     display: block;
     content: "";
     width: 100%;
-    height: auto;
-    min-height: 30%;
+    height: 69px;
     background: url("../img/icons/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-position: top center;
@@ -94,7 +93,7 @@
   &::after {
     position: absolute;
     left: 50%;
-    top: 115px;
+    top: 131px;
     transform: translateX(-50%);
     display: block;
     content: "";
@@ -117,11 +116,15 @@
 
 @media #{$tablet} {
   .contacts {
-    padding-top: 6.4%;
+    padding-top: 55px;
   }
 
   .contacts__subhead {
-    margin-bottom: 3.3%;
+    margin-bottom: 35px;
+  }
+
+  .contacts__tagline {
+    margin-bottom: 18px;
   }
 
   .contacts__tagline {
@@ -130,17 +133,18 @@
 
   .contacts__contacts {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 9px;
+    padding-right: 14px;
   }
 
   .contacts__adds {
     width: 36%;
-    margin-bottom: 6.3%;
+    margin-bottom: 36px;
   }
 
   .contacts__allotted {
-    margin-bottom: 4%;
+    margin-bottom: 2px;
   }
 
   .contacts__text {
@@ -148,16 +152,25 @@
   }
 
   .contacts__map {
-    min-height: 380px;
+    min-height: 401px;
     background-image: url("../img/fond/bg-map-tablet@1x.jpg");
     background-position: center 70%;
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/fond/bg-map-tablet@2x.png");
-      background-size: contain;
+    }
+
+    &::before {
+      height: 97px;
+    }
+
+    &::after {
+      top: 221px;
     }
   }
+
+
 
   .contacts__map iframe {
     min-height: 380px;

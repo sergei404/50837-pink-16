@@ -13,8 +13,8 @@
 .main-nav__item {
   width: 100%;
   text-align: center;
-  padding-top: 5%;
-  margin-bottom: 4.4%;
+  padding-top: 15.5px;
+  margin-bottom: 15px;
   border-top: 1.5px solid #000000;
   box-shadow: inset 0 2px 0 0 #485461;
 }
@@ -27,6 +27,15 @@
   color: $white;
 
   @include link();
+
+  &:hover {
+    color: $color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
 }
 
 @media #{$tablet} {
@@ -38,13 +47,14 @@
 
 @media #{$desktop} {
   .main-nav {
+    width: 71.7%;
+    padding-top: 4px;
     display: block;
     background-color: transparent;
   }
 
   .main-nav__list {
     display: flex;
-    justify-content: space-between;
     border: 0;
   }
 
@@ -52,22 +62,19 @@
     @include zeroing();
     border: none;
     box-shadow: none;
-    padding-top: 0;
+    letter-spacing: 0.5px;
+
+    &:nth-child(3) {
+      margin-right: 5px;
+    }
   }
 
   .main-nav__link {
     font-weight: 400;
     text-transform: capitalize;
     line-height: 18px;
+
     color: $white;
-
-    &:hover {
-      color: #d22856;
-    }
-
-    &:active {
-      color: #646c75;
-    }
 
     &--active {
       border-bottom: 2px solid $white;
@@ -76,5 +83,9 @@
         color: $white;
       }
     }
+  }
+
+  .main-nav__link-html {
+    text-transform: uppercase;
   }
 }
