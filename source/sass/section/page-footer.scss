@@ -37,15 +37,12 @@
 
 .page-footer__list {
   @include list();
-  //margin-bottom: 11%;
 }
 
 .page-footer__copyright {
   width: 45%;
   display: flex;
-  //justify-content: space-around;
   align-items: flex-end;
-  //margin-bottom: 8%;
 }
 
 .page-footer__link-html {
@@ -100,13 +97,16 @@
 
   .page-footer__link-html {
     margin-left: 15px;
+    margin-bottom: 3px;
   }
 }
 
 @media #{$desktop} {
   .page-footer {
-    padding-left: 7.5%;
-    padding-right: 7.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 68px;
+    padding-top: 68px;
   }
 
   .page-footer__blue-mobile {
@@ -115,5 +115,9 @@
 
   .page-footer__blue-desktop {
     display: inline-block;
+  }
+
+  .page-footer__text {
+    font-size: 18px;
   }
 }

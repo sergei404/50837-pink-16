@@ -24,29 +24,19 @@
 .info__wrap {
   position: relative;
   background-color: $lightblue;
-  padding-top: 24%;
+  padding-top: 23.3%;
   padding-left: 8.4%;
   padding-right: 8.4%;
-
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    content: "";
-    width: 100%;
-    height: 94px;
-    background-image: url("../img/icons/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    background-size: cover;
-  }
+  background-image: url("../img/icons/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
 
   &::after {
     position: relative;
     content: "";
     display: block;
-    min-height: 285px;
+    min-height: 287px;
     background-image: url("../img/fond/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center 8px;
@@ -93,7 +83,7 @@
 @media #{$tablet} {
   .info__subhead {
     padding-top: 7.8%;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .info__tagline {
@@ -116,7 +106,7 @@
 
     &::after {
       min-width: 265px;
-      min-height: 485px;
+      min-height: 487px;
       background-image: url("../img/fond/iphone-screen-3-tablet@1x.png");
       background-position: left 5px;
 
@@ -129,7 +119,7 @@
 
   .info__list {
     width: 47%;
-    padding-top: 33px;
+    padding-top: 30px;
   }
 
   .info__item {
@@ -143,6 +133,7 @@
   }
 
   .info__title {
+    width: 300px;
     margin-bottom: 11px;
   }
 
@@ -181,7 +172,7 @@
     width: 70%;
 
     @include zeroing;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
     font-size: 30px;
     line-height: 36px;
   }
@@ -206,13 +197,23 @@
 }
 
 @media #{$desktop} {
+  .info__subhead {
+    padding-top: 6.3%;
+    margin-bottom: 75px;
+  }
+
   .info__tagline {
     font-size: 50px;
+
+    &:last-child {
+      width: 60%;
+      line-height: 62px;
+    }
   }
 
   .info__wrap {
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 9.8%;
+    padding-right: 9.9%;
 
     &::after {
       display: none;
@@ -227,18 +228,20 @@
   }
 
   .info__item {
-    width: 25%;
-    display: block;
+    width: 31.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 
     &::before {
       position: relative;
       content: "";
       display: block;
-      min-width: 180px;
-      min-height: 300px;
-      margin-bottom: 10%;
-      background-position: center center;
+      min-width: 195px;
+      min-height: 302px;
+      margin-bottom: 17.8%;
+      background-position: center 0;
       background-repeat: no-repeat;
       background-size: cover;
       z-index: 1;
@@ -269,9 +272,68 @@
     }
   }
 
+
+  .info__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .info__text {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   .info__action {
-    padding-top: 0;
-    padding-bottom: 6%;
+    padding-top: 29px;
+    padding-bottom: 5.5%;
+    padding-left: 7.5%;
     background-color: $lightblue;
+
+    &::before {
+      width: 317px;
+      min-height: 345px;
+      padding-top: 109px;
+      font-size: 120px;
+      background-position: 32px 70px, 12px 0;
+      background-size: 254px auto, contain;
+    }
+  }
+
+  .info__action-wrap {
+    width: 60.7%;
+    padding-top: 92px;
+    padding-left: 0;
+  }
+
+  .info__title-action {
+    @include zeroing;
+    margin-bottom: 22px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .info__text-action {
+    width: 78%;
+
+    @include zeroing;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: $color;
+  }
+
+
+  .info__link {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: $color;
   }
 }
