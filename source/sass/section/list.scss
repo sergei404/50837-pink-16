@@ -23,7 +23,8 @@
 }
 
 @media #{$desktop} {
-  .list__item {
-    width: 33%;
+  .list {
+    margin-left: 10.8%;
+    margin-right: 10.8%;
   }
 }

@@ -1,8 +1,8 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  padding-top: 13%;
   background-color: #ffffff;
 
   &--сopperfield {
@@ -13,6 +13,7 @@
 .page-footer__link {
   display: block;
   text-align: center;
+  margin-bottom: 39px;
 }
 
 .page-footer__link svg {
@@ -43,6 +44,8 @@
   width: 45%;
   display: flex;
   align-items: flex-end;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 .page-footer__link-html {
@@ -68,7 +71,7 @@
     justify-content: space-around;
     align-items: center;
     padding-top: 40px;
-    padding-bottom: 36px;
+    //margin-bottom: 10px;
     padding-left: 7px;
     padding-right: 7px;
 
@@ -89,15 +92,18 @@
   .page-footer__copyright {
     width: 30%;
     justify-content: flex-end;
+    align-items: center;
   }
 
   .page-footer__text {
+    @include zeroing;
+
     letter-spacing: 0.35px;
   }
 
   .page-footer__link-html {
     margin-left: 15px;
-    margin-bottom: 3px;
+    margin-top: 3px;
   }
 }
 
@@ -105,8 +111,8 @@
   .page-footer {
     padding-left: 8%;
     padding-right: 8%;
-    padding-bottom: 68px;
-    padding-top: 68px;
+    padding-bottom: 39px;
+    padding-top: 105px;
   }
 
   .page-footer__blue-mobile {
@@ -115,6 +121,10 @@
 
   .page-footer__blue-desktop {
     display: inline-block;
+  }
+
+  .page-footer__copyright {
+    margin-bottom: 7px;
   }
 
   .page-footer__text {
