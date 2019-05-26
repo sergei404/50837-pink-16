@@ -57,7 +57,7 @@
   display: none;
 }
 
-.upload__input:checked+.upload__icon {
+.upload__input:checked + .upload__icon {
   opacity: 1;
 }
 
@@ -264,6 +264,7 @@
 
     &--two {
       display: block;
+
       .upload__range-thumb {
         right: 81%;
       }
@@ -379,6 +380,7 @@
 
     &--two {
       display: block;
+
       .upload__range-thumb {
         right: 10%;
       }
