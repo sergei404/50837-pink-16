@@ -11,6 +11,7 @@
 @media #{$tablet} {
   .list {
     display: flex;
+    align-items: stretch;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 3%;

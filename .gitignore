@@ -12,3 +12,4 @@ source/css/*.css
 source/css/*.map
 sourse/sass/layout/normalize.scss
 Thumbs.db
+build/
