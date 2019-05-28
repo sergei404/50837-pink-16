@@ -104,11 +104,12 @@
       <form action="https://echo.htmlacademy.ru" class="page-form">
         <h1 class="page-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <div class="page-form__wrapper">
-          <p class="page-form__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз &mdash; 1000 миль на
-            вашу бонусную карту!
+          <p class="page-form__text">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз &mdash; 1000
+            миль на
+            вашу&nbsp;бонусную карту!
             <span class="page-form__text-none">Пожалуйста, заполните форму ниже:</span></p>
           <div class="page-form__wrap">
-            <div class="page-form__block">
+            <div class="page-form__block page-form__block--noname">
               <p class="page-form__row">
                 <label for="firstname" class="page-form__label page-form__label--ruddle">фамилия:</label>
                 <input id="firstname" class="page-form__input" type="text" placeholder="Укажите фамилию *" required>
@@ -123,8 +124,9 @@
               </p>
             </div>
             <div class="page-form__block page-form__block--lightblue">
-              <h2 class="page-form__tagline page-form__tagline--check">ваши безбашенные достижения в путешествии</h2>
-              <div class="page-form__block-wrap page-form__block-wrap--wrap">
+              <h2 class="page-form__tagline page-form__tagline--check">ваши безбашенные достижения&nbsp;в&nbsp;путешествии
+              </h2>
+              <div class="page-form__block-wrap">
                 <label class="page-form__label page-form__label--carry">
                   <input class="page-form__checkbox" type="checkbox" checked>
                   <span class="page-form__fake"></span>
@@ -159,10 +161,11 @@
             </div>
             <div class="page-form__block page-form__block--contacts">
               <h2 class="page-form__tagline page-form__tagline--visible">Контактная информация</h2>
-              <div class="page-form__block-wrap">
+              <div class="page-form__block-wrap page-form__block-wrap--contacts">
                 <p class="page-form__row page-form__row--contacts">
                   <label for="tel" class="page-form__label page-form__label--ruddle">номер телефона</label>
-                  <input id="tel" class="page-form__input" type="tel" pattern="([+]7|8)[-/.(]\d{3}[-/.)]\d{3}[-/.]\d{2}[-/.]\d{2}$" placeholder="Номер, пожалуйста">
+                  <input id="tel" class="page-form__input" type="tel"
+                    pattern="([+]7|8)[-/.(]\d{3}[-/.)]\d{3}[-/.]\d{2}[-/.]\d{2}$" placeholder="Номер, пожалуйста">
                 </p>
                 <p class="page-form__row page-form__row--contacts">
                   <label for="email" class="page-form__label page-form__label--ruddle">адрес почты</label>
@@ -171,35 +174,37 @@
                 </p>
               </div>
             </div>
-            <div class="page-form__block page-form__block--lightblue">
+            <div class="page-form__block page-form__block--radio">
               <h2 class="page-form__tagline page-form__tagline--radio">с каким приложением путешествовали?</h2>
-              <label class="page-form__label page-form__label--radio">
-                <input class="page-form__checkbox" type="radio" name="annex" value="ios" checked>
-                <span class="page-form__fake page-form__fake--radio"></span>
-                <span class="page-form__word">Pink для iOS</span>
-              </label>
-              <label class="page-form__label page-form__label--radio">
-                <input class="page-form__checkbox" type="radio" name="annex" value="android">
-                <span class="page-form__fake page-form__fake--radio"></span>
-                <span class="page-form__word">Pink на Android</span>
-              </label>
-              <label class="page-form__label page-form__label--radio">
-                <input class="page-form__checkbox" type="radio" name="annex" value="Windows">
-                <span class="page-form__fake page-form__fake--radio"></span>
-                <span class="page-form__word">Windows Phone</span>
-              </label>
+              <div class="page-form__block-wrap page-form__block-wrap--radio">
+                <label class="page-form__label page-form__label--radio">
+                  <input class="page-form__checkbox" type="radio" name="annex" value="ios" checked>
+                  <span class="page-form__fake page-form__fake--radio"></span>
+                  <span class="page-form__word">Pink для iOS</span>
+                </label>
+                <label class="page-form__label page-form__label--radio">
+                  <input class="page-form__checkbox" type="radio" name="annex" value="android">
+                  <span class="page-form__fake page-form__fake--radio"></span>
+                  <span class="page-form__word">Pink на Android</span>
+                </label>
+                <label class="page-form__label page-form__label--radio">
+                  <input class="page-form__checkbox" type="radio" name="annex" value="Windows">
+                  <span class="page-form__fake page-form__fake--radio"></span>
+                  <span class="page-form__word">Windows Phone</span>
+                </label>
+              </div>
             </div>
             <div class="page-form__block page-form__block--textarea">
               <h2 class="page-form__tagline page-form__tagline--textarea">опишите свои эмоции</h2>
-              <label class="page-form__label">
-                <textarea class="page-form__input page-form__input--textarea"
-                  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-              </label>
+                <label class="page-form__label">
+                  <textarea class="page-form__input page-form__input--textarea"
+                    placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                </label>
             </div>
           </div>
           <div class="page-form__envelope">
             <button type="submit" class="page-form__button">отправить форму</button>
-            <p class="page-form__hint"><sup>&#9913;</sup> &mdash; обязательные поля</p>
+            <p class="page-form__hint"><sup>&#9913;</sup> &mdash; обязательные<span class="page-form__hint-dormant"> для заполнения </span> поля</p>
           </div>
         </div>
       </form>
@@ -342,6 +347,7 @@
     </div>
   </div>
   <script src="js/main.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>

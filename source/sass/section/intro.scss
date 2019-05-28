@@ -1,9 +1,9 @@
 .intro {
   width: 100%;
-  padding-top: 49.5%;
+  padding-top: 51%;
   background-image: url("../img/fond/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 4px;
+  background-position: 50% 8px;
   background-size: contain;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -16,10 +16,10 @@
 .intro__annex {
   position: relative;
   width: 100%;
-  padding-top: 305px;
+  padding-top: 308px;
   background-image: url("../img/fond/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 19px;
+  background-position: 0 20px;
   background-size: 260px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 9.5%;
+  padding-top: 8.9%;
   background-color: #1d2631;
 }
 
@@ -102,17 +102,17 @@
   text-align: center;
   color: $white;
   line-height: 24px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 @media #{$tablet} {
   .intro {
-    width: 100%;
     padding-top: 25%;
     background-image: url("../img/fond/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 49.5% 35px;
-    background-size: cover;
+    background-position: 49.5% bottom;
+    background-size: 1199px auto;
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/fond/bg-back-tablet@2x.jpg");
@@ -121,9 +121,9 @@
 
   .intro__annex {
     width: 100%;
-    padding-top: 72px;
+    padding-top: 75px;
     background-image: url("../img/fond/iphone-hand-tablet@1x.png");
-    background-position: center 55px;
+    background-position: center bottom;
     background-size: 700px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -133,7 +133,7 @@
 
   .intro__wrap {
     width: 50%;
-    padding-top: 0;
+    padding-top: 7px;
     margin-left: 1%;
     background-color: transparent;
   }
@@ -170,9 +170,9 @@
 
 @media #{$desktop} {
   .intro {
-    padding-top: 25%;
+    padding-top: 24.75%;
     background-image: url("../img/fond/bg-back-desktop@1x.jpg");
-    background-position: center bottom;
+    background-position: center 100%;
     background-size: 2562px 860px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -181,8 +181,9 @@
   }
 
   .intro__annex {
+    padding-top: 73px;
     background-image: url("../img/fond/iphone-hand-desktop@1x.png");
-    background-position: 96% 100%;
+    background-position: 96% bottom;
     background-size: 1047px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -199,7 +200,7 @@
     width: 300px;
     font-size: 50px;
     line-height: 60px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   .intro__reference {
@@ -217,6 +218,6 @@
 
   .intro__text {
     width: 300px;
-    margin-bottom: 123px;
+    margin-bottom: 125px;
   }
 }

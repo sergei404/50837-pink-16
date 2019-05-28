@@ -1,6 +1,6 @@
 .content {
   width: 100%;
-  padding-top: 31%;
+  padding-top: 32.5%;
   background-image: url("../img/fond/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 5px;
@@ -17,7 +17,7 @@
   display: block;
 
   @include zeroing();
-  margin-bottom: 26%;
+  margin-bottom: 25.5%;
   text-align: center;
   font-size: 24px;
   line-height: 30px;
@@ -30,9 +30,9 @@
 }
 
 .content__panorama {
-  padding-top: 14%;
+  padding-top: 14.4%;
   background-color: $white;
-  margin-bottom: 6.5%;
+  margin-bottom: 5.5%;
 }
 
 .content__text {
@@ -50,7 +50,6 @@
 
 .content__photo {
   position: relative;
-  width: 100%;
 }
 
 .content__allotted {
@@ -68,7 +67,7 @@
 
 .content__image {
   width: 100%;
-  min-height: 140px;
+  min-height: 136px;
 }
 
 .content__comment {
@@ -146,10 +145,10 @@
 
 @media #{$tablet} {
   .content {
-    padding-top: 35%;
+    padding-top: 36.5%;
     background-image: url("../img/fond/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 33px;
+    background-position: 50% 44px;
     background-size: 1200px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -221,11 +220,10 @@
 
 @media #{$desktop} {
   .content {
-    padding-top: 31.7%;
+    padding-top: 28.6%;
     background-image: url("../img/fond/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 10.45%;
-    background-size: 2550px auto;
+    background-position: 50% 7%;
+    background-size: 2550px 1060px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/fond/bg-back-desktop@2x.jpg");
@@ -235,7 +233,7 @@
   }
 
   .content__title {
-    margin-bottom: 9.8%;
+    margin-bottom: 10.2%;
   }
 
   .content__panorama {
