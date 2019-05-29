@@ -118,7 +118,7 @@
     font-size: 18px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 31px;
+    margin-bottom: 33px;
     letter-spacing: 0.42px;
   }
 
@@ -149,8 +149,8 @@
       fill: #7e868f;
     }
 
-    &:active {
-      opacity: 0.5;
+    &:active svg {
+      fill: #e9ebec;
     }
   }
 
