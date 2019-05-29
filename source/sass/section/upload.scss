@@ -50,7 +50,7 @@
   width: 64%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
 }
 
 .upload__label {
@@ -177,7 +177,7 @@
 }
 
 .upload__button {
-  margin-bottom: 15%;
+  margin-bottom: 14.5%;
   opacity: 0.1;
 
   &:hover {
@@ -201,7 +201,7 @@
 
   .upload__block-text {
     width: 465px;
-    margin-bottom: 10%;
+    margin-bottom: 9.7%;
   }
 
   .upload__text {
@@ -222,7 +222,7 @@
   }
 
   .upload__block {
-    width: 44.5%;
+    width: 44.3%;
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
@@ -250,14 +250,14 @@
     background-size: contain;
 
     &--contrast {
-      width: 25px;
-      height: 19px;
+      width: 23px;
+      height: 18px;
     }
   }
 
 
   .upload__block-controls {
-    width: 75%;
+    width: 74%;
     padding-top: 12px;
   }
 

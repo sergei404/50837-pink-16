@@ -313,13 +313,13 @@
   .page-form__title {
     padding-left: 12%;
     padding-right: 12%;
-    margin-bottom: 12.5%;
+    margin-bottom: 12.4%;
     font-size: 50px;
     line-height: 60px;
   }
 
   .page-form__wrapper {
-    padding-top: 13.8%;
+    padding-top: 13.9%;
     padding-left: 3%;
     padding-right: 3%;
   }
@@ -353,7 +353,7 @@
       padding: 0;
       border: 0;
       order: 1;
-      margin-bottom: 4.1%;
+      margin-bottom: 4.7%;
     }
 
     &--radio {
@@ -425,17 +425,18 @@
       position: relative;
       flex-direction: column-reverse;
       align-items: flex-start;
-      padding-left: 17px;
+      padding-left: 17.3px;
       padding-right: 17px;
 
       .page-form__label {
         margin-left: 21px;
-        margin-bottom: 13px;
+        margin-bottom: 14px;
+        letter-spacing: -0.4px;
       }
 
       .page-form__input {
         position: relative;
-        padding-left: 3.7%;
+        padding-left: 22px;
         margin-bottom: 12px;
         background-color: transparent;
         z-index: 1;
@@ -447,7 +448,7 @@
         top: 2px;
         content: "";
         display: block;
-        width: 60px;
+        width: 62px;
         height: 59px;
         background-image: url("../img/icons/icon-phone.svg");
         background-repeat: no-repeat;
@@ -514,7 +515,7 @@
     align-items: baseline;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
   }
 
   .page-form__button {
@@ -584,16 +585,16 @@
     &--contacts {
       display: flex;
       order: -1;
-      padding-left: 4.2%;
+      padding-left: 4.5%;
       padding-right: 4.6%;
-      margin-bottom: 63px;
+      margin-bottom: 65px;
     }
 
     &--lightblue {
       padding-left: 6.4%;
       padding-right: 7%;
-      padding-bottom: 2%;
-      margin-bottom: 6.8%;
+      padding-bottom: 1.8%;
+      margin-bottom: 6.5%;
     }
 
     &--textarea {
@@ -624,7 +625,7 @@
 
     &--textarea {
       width: 32%;
-      margin-bottom: 4%;
+      margin-bottom: 4.2%;
     }
   }
 
@@ -729,7 +730,7 @@
   }
 
   .page-form__fake {
-    margin-right: 6.3%;
+    margin-right: 20px;
   }
 
   .page-form__word {
@@ -741,7 +742,7 @@
   }
 
   .page-form__button {
-    width: 32%;
+    width: 31.8%;
     margin-bottom: 0;
   }
 

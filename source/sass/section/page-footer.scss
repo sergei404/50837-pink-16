@@ -43,14 +43,13 @@
 .page-footer__copyright {
   width: 45%;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-around;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .page-footer__link-html {
-  display: block;
-
+  margin-top: 10px;
   &:hover {
     svg {
       fill: #283645;
@@ -64,6 +63,10 @@
   }
 }
 
+.page-footer__text {
+  color: #616c77;
+}
+
 @media #{$tablet} {
   .page-footer {
     width: 100%;
@@ -71,8 +74,8 @@
     justify-content: space-around;
     align-items: center;
     padding-top: 40px;
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-left: 9px;
+    padding-right: 9px;
 
     &--сopperfield {
       display: flex;
@@ -92,6 +95,7 @@
     width: 30%;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 29px;
   }
 
   .page-footer__text {
@@ -101,16 +105,16 @@
   }
 
   .page-footer__link-html {
-    margin-left: 13px;
+    margin-left: 15px;
   }
 }
 
 @media #{$desktop} {
   .page-footer {
     padding-left: 8%;
-    padding-right: 8%;
-    padding-bottom: 39px;
-    padding-top: 76px;
+    padding-right: 8.2%;
+    padding-bottom: 37px;
+    padding-top: 74px;
   }
 
   .page-footer__blue-mobile {
