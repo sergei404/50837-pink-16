@@ -14,7 +14,7 @@
   background-color: #283645;
 }
 
-.page-header__wrap--show+.page-header__nav {
+.page-header__wrap--show + .page-header__nav {
   display: block;
 }
 
@@ -25,12 +25,12 @@
   margin-bottom: 1.8%;
 }
 
-.page-header__logo svg {
+.page-header__logo-cvg {
   &:hover {
     path {
-        fill: #d22856;
-      }
+      fill: #d22856;
     }
+  }
 
   &:active {
     opacity: 0.3;

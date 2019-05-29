@@ -8,8 +8,7 @@
   background-position: 50% 5px;
   background-size: contain;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/fond/bg-back-mobile@2x.jpg");
     background-position: 50% -4px;
     background-size: 717px auto;
@@ -210,7 +209,7 @@
 }
 
 .page-form__checkbox:checked {
-  &+.page-form__fake {
+  & + .page-form__fake {
     &::before {
       border: 2px solid #d22856;
       content: "";
@@ -226,7 +225,7 @@
     }
   }
 
-  &+.page-form__fake--radio {
+  & + .page-form__fake--radio {
     &::before {
       left: 10px;
       top: 10px;
@@ -304,8 +303,7 @@
     background-position: 50% 45px;
     background-size: 1200px auto;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/fond/bg-back-tablet@2x.jpg");
       background-position: 50% 2px;
       background-size: 1460px auto;
@@ -536,8 +534,7 @@
     background-position: 50% 12%;
     background-size: 2550px 1060px;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/fond/bg-back-desktop@2x.jpg");
       background-position: 50% 4%;
       background-size: 2650px auto;
@@ -636,6 +633,7 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+
       @include zeroing;
     }
 
@@ -686,6 +684,7 @@
 
     &--carry {
       width: 25.1%;
+
       @include zeroing;
       margin-bottom: 5%;
 

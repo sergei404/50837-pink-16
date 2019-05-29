@@ -118,13 +118,6 @@
   border: 0;
 }
 
-.contacts__map {
-  &::before {
-    background-repeat: no-repeat;
-  }
-}
-
-
 @media #{$tablet} {
   .contacts {
     padding-top: 53px;

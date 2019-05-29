@@ -11,8 +11,6 @@
 @media #{$tablet} {
   .list {
     display: flex;
-    //align-content: stretch;
-   //flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 20px;
