@@ -409,7 +409,17 @@
   .page-form__row {
     width: 100%;
     display: flex;
-    align-items: baseline;
+
+    &--noname {
+      align-items: baseline;
+
+      &:last-child {
+        .page-form__label {
+          margin-right: 3%;
+          letter-spacing: -0.4px;
+        }
+      }
+    }
 
     &--contacts {
       position: relative;
@@ -481,7 +491,7 @@
   .page-form__input {
     width: 100%;
     padding-left: 23px;
-    margin-bottom: 4%;
+    margin-bottom: 3.8%;
 
     &--textarea {
       min-height: 195px;
@@ -556,7 +566,7 @@
 
   .page-form__block {
     &--noname {
-      width: 46%;
+      width: 46.2%;
       order: -3;
       margin-top: -9px;
       margin-right: 7.5%;
@@ -564,24 +574,25 @@
     }
 
     &--radio {
-      width: 46%;
+      width: 46.2%;
       order: -2;
       padding-left: 0;
       padding-right: 0;
-      margin-bottom: 6.5%;
+      margin-bottom: 6.8%;
     }
 
     &--contacts {
       display: flex;
       order: -1;
-      padding-left: 4.4%;
-      padding-right: 4.5%;
+      padding-left: 4.2%;
+      padding-right: 4.6%;
+      margin-bottom: 63px;
     }
 
     &--lightblue {
-      padding-left: 6%;
-      padding-right: 6%;
-      padding-bottom: 1%;
+      padding-left: 6.4%;
+      padding-right: 7%;
+      padding-bottom: 2%;
       margin-bottom: 6.8%;
     }
 
@@ -607,8 +618,8 @@
     }
 
     &--check {
-      width: 54%;
-      margin-bottom: 5.3%;
+      width: 53%;
+      margin-bottom: 5.5%;
     }
 
     &--textarea {
@@ -618,23 +629,41 @@
   }
 
   .page-form__block-wrap {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-left: 3px;
+    &--lightblue {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @include zeroing;
+    }
 
     &--contacts {
-      justify-content: space-between;
+      display: flex;
       flex-wrap: nowrap;
+      justify-content: space-between;
 
       .page-form__label {
-        margin-left: 3.3%;
+        margin-left: 5%;
         margin-bottom: 0;
+        letter-spacing: -0.3px;
+      }
+
+      .page-form__input {
+        margin-bottom: 2.5%;
+        padding-left: 19px;
       }
     }
   }
 
   .page-form__row {
+    &--noname {
+      &:last-child {
+        .page-form__label {
+          margin-right: 3.8%;
+        }
+      }
+    }
+
     &--contacts {
       width: 47.6%;
     }
@@ -646,10 +675,10 @@
     &--radio {
       width: 100%;
       margin-left: 17%;
-      margin-bottom: 34px;
+      margin-bottom: 35px;
 
       &:last-child {
-        margin-bottom: 60px;
+        margin-bottom: 55px;
       }
     }
 
@@ -657,14 +686,14 @@
       width: 25.1%;
 
       @include zeroing;
-      margin-bottom: 5.3%;
+      margin-bottom: 5%;
 
       &:first-child {
-        width: 26.7%;
         order: -3;
       }
 
       &:nth-child(3) {
+        margin-left: 21px;
         order: -2;
       }
 
@@ -672,18 +701,22 @@
         order: -1;
       }
 
-      &:nth-child(2) {
-        width: 26.7%;
+      &:nth-child(4) {
+        margin-left: 21px;
+      }
+
+      &:last-child {
+        margin-bottom: 5%;
       }
 
       .page-form__fake {
-        margin-right: 8.5%;
+        margin-right: 9.5%;
       }
     }
   }
 
   .page-form__input {
-    margin-bottom: 6%;
+    margin-bottom: 5.8%;
 
     &--textarea {
       width: 100%;
