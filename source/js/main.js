@@ -74,18 +74,15 @@ startMap();*/
 
 //слайдер
 
-// var tog = document.querySelectorAll('.slider__toggle');
-// var boxTog = document.querySelector('.slider__toggles');
+var tog = document.querySelectorAll('.reivew-slider__input');
+var boxTog = document.querySelector('.reivew-slider__toggles');
 
-// boxTog.onclick = function(event) {
-//   if(event.target) {
-
-//   }
-//   for(var i = 0 ; i < tog.length; i++) {
-//     if(tog[i].classList.contains('slider__toggle--active')) {
-//       tog[i].classList.remove('slider__toggle--active');
-//     } else {
-
-//     }
-//   }
-// }
+boxTog.onclick = function(event) {
+  if(event.target) {
+    console.log(event.target);
+  }
+  // for(var i = 0 ; i < tog.length; i++) {
+  //   if(tog[i].classList.contains('slider__toggle--active')) {
+  //     tog[i].classList.remove('slider__toggle--active');
+  //   } else {
+}
