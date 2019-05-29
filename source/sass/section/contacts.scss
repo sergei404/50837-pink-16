@@ -42,17 +42,21 @@
   @include zeroing();
 }
 
-.contacts__link,
-.contacts__email {
+.contacts__link {
   @include link();
 
   font-size: 24px;
   font-weight: 300;
-  color: #d22856;
+  color: $color;
 
   &:hover {
     color: #283645;
     text-decoration: underline;
+  }
+
+  &:active {
+    color: #bec2c7;
+    text-decoration: none;
   }
 }
 
@@ -113,13 +117,6 @@
   min-height: 210px;
   border: 0;
 }
-
-.contacts__map {
-  &::before {
-    background-repeat: no-repeat;
-  }
-}
-
 
 @media #{$tablet} {
   .contacts {
