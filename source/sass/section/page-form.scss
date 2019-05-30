@@ -546,7 +546,7 @@
   .page-form__title {
     padding-left: 10%;
     padding-right: 10%;
-    margin-bottom: 8.5%;
+    margin-bottom: 8.8%;
     font-size: 50px;
 
     span {
@@ -561,6 +561,9 @@
   }
 
   .page-form__text {
+    width: 800px;
+    @include zeroing;
+    margin: 0 auto;
     margin-bottom: 8.4%;
   }
 
