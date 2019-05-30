@@ -97,6 +97,7 @@
   .reivew-slider__item {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
     padding-top: 39px;
   }
 
@@ -189,6 +190,7 @@
   }
 
   .reivew-slider__text {
+    width: 722px;
     margin-bottom: 32px;
   }
 
