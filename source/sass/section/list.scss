@@ -1,7 +1,7 @@
 .list {
   @include list();
-  margin-left: 3.5%;
-  margin-right: 3.5%;
+  margin-left: 11px;
+  margin-right: 11px;
 }
 
 .list__item {
@@ -13,8 +13,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .list__item {
@@ -24,7 +24,7 @@
 
 @media #{$desktop} {
   .list {
-    margin-left: 10.8%;
-    margin-right: 10.8%;
+    margin-left: 130px;
+    margin-right: 130px;
   }
 }
