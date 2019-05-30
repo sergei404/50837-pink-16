@@ -74,8 +74,8 @@ startMap();*/
 
 //слайдер
 
-// var tog = document.querySelectorAll('.slider__toggle');
-// var boxTog = document.querySelector('.slider__toggles');
+var tog = document.querySelectorAll('.reivew-slider__input');
+var boxTog = document.querySelector('.reivew-slider__toggles');
 
 // boxTog.onclick = function(event) {
 //   if(event.target) {
@@ -91,3 +91,4 @@ startMap();*/
 // }
 
 //range
+

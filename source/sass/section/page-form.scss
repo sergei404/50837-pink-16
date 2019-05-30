@@ -150,7 +150,7 @@
 .page-form__input {
   width: 100%;
   padding-top: 15px;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
   padding-left: 7%;
   margin-bottom: 5px;
   font-family: inherit;
@@ -440,16 +440,17 @@
         margin-bottom: 12px;
         background-color: transparent;
         z-index: 1;
+        overflow: hidden;
       }
 
       &::before {
         position: absolute;
         right: 19px;
-        top: 2px;
+        top: 0;
         content: "";
         display: block;
         width: 62px;
-        height: 59px;
+        height: 62px;
         background-image: url("../img/icons/icon-phone.svg");
         background-repeat: no-repeat;
         background-position: center center;
@@ -545,8 +546,12 @@
   .page-form__title {
     padding-left: 10%;
     padding-right: 10%;
-    margin-bottom: 8.5%;
+    margin-bottom: 8.8%;
     font-size: 50px;
+
+    span {
+      display: block;
+    }
   }
 
   .page-form__wrapper {
@@ -556,6 +561,9 @@
   }
 
   .page-form__text {
+    width: 800px;
+    @include zeroing;
+    margin: 0 auto;
     margin-bottom: 8.4%;
   }
 
